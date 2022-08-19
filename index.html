@@ -5,58 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="WebStudio">WebStudio</a>
+        <a class="logo-name" href="WebStudio"
+          ><span class="blue-text">Web</span>Studio</a
+        >
         <!-- Navigating to other pages -->
-        <ul>
-          <li><a href="Agencja">Agencja</a></li>
-          <li><a href="Portfolio">Portfolio</a></li>
-          <li><a href="Kontakt">Kontakt</a></li>
+        <ul class="menu">
+          <li>
+            <a class="menu-list" href="index.html"
+              ><span class="blue-text">Agencja</span></a
+            >
+          </li>
+          <li>
+            <a class="menu-list" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="menu-list" href="">Kontakt</a>
+          </li>
         </ul>
       </nav>
       <!-- Contact -->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="contact">
+        <li>
+          <a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contact-list" href="tel:+48111111111">+48 111 111 111</a
+          >
+        </li>
       </ul>
     </header>
 
     <main>
-      <div>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługe</button>
+      <div class="main-description">
+        <h1>EFEKTYWNE ROZWIĄZANIA</br>
+          DLA WASZEGO BIZNESU</h1>
+        <button class="order-button" type="button">Zamów usługe</button>
       </div>
 
       <section>
-        <ul>
+        <ul class="section">
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="section-list">LOREM IPSUM</h3>
+            <p class="section-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="section-list">LOREM IPSUM</h3>
+            <p class="section-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="section-list">LOREM IPSUM</h3>
+            <p class="section-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="section-list">LOREM IPSUM</h3>
+            <p class="section-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -66,8 +89,8 @@
 
       <!-- Photos of our work -->
       <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
+        <h2 class="heading">Czym się zajmujemy</h2>
+        <ul class="picture">
           <li>
             <img
               src="images/img1.jpg"
@@ -96,8 +119,8 @@
       </section>
 
       <section>
-        <h2>Nasz zespół</h2>
-        <ul>
+        <h2 class="heading">Nasz zespół</h2>
+        <ul class="picture">
           <li>
             <figure>
               <img
@@ -107,8 +130,8 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>Product Designer</p>
+                <h3 class="picture-name">John Doe</h3>
+                <p class="picture-job">Product Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -121,8 +144,8 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>Frontend Developer</p>
+                <h3 class="picture-name">John Doe</h3>
+                <p class="picture-job">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
@@ -135,8 +158,8 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>Marketing</p>
+                <h3 class="picture-name">John Doe</h3>
+                <p class="picture-job">Marketing</p>
               </figcaption>
             </figure>
           </li>
@@ -149,8 +172,8 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>UI Designer</p>
+                <h3 class="picture-name">John Doe</h3>
+                <p class="picture-job">UI Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -161,16 +184,18 @@
     <!-- Page footer -->
     <footer>
       <address>
-        <a href="WebStudio">WebStudio</a>
-        <ul>
+        <a class="logo-name" href="WebStudio"
+          ><span class="blue-text">Web</span>Studio</a
+        >
+        <ul class="footer">
           <li>
-            <a href="*">m. Warszawa, Aleje Jerozolimskie 21</a>
+            <a class="footer-list" href="*">m. Warszawa, Aleje Jerozolimskie 21</a>
           </li>
           <li>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-list" href="mailto:info@example.com">info@example.com</a>
           </li>
           <li>
-            <a href="tel:+48111111111">+48 111 111 111</a>
+            <a class="footer-list" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
       </address>

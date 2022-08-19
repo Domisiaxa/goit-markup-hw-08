@@ -1,0 +1,160 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+/* just the logo */
+.logo-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000000;
+  line-height: 1.19;
+}
+
+/* color elements */
+.blue-text {
+  color: #2196f3;
+}
+
+/* contact */
+.menu {
+  font-weight: 500;
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.14;
+}
+
+.menu-list {
+  text-decoration: none;
+  color: #212121;
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.14;
+}
+
+.contact-list {
+  text-decoration: none;
+  color: #757575;
+}
+
+/* focus */
+.menu-list:hover {
+  color: #2196f3;
+}
+
+.contact-list:hover {
+  color: #2196f3;
+}
+
+.footer-list:hover {
+  color: #2196f3;
+}
+
+/* main inscription */
+.main-description {
+  font-weight: 900;
+  font-size: 44px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.36;
+}
+
+.order-button {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  line-height: 1.87;
+  background-color: #2196f3;
+}
+
+.section {
+  list-style: none;
+}
+
+.section-list {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.section-text {
+  font-size: 14px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.picture {
+  list-style: none;
+}
+
+.picture-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.picture-job {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* footer */
+.footer {
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.71;
+}
+
+.footer-list {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* only portfolio */
+.button-list {
+  list-style: none;
+}
+
+.font-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  background: #f5f4fa;
+  text-align: center;
+}
+
+.font-button:hover {
+  color: white;
+  background: #2196f3;
+}
+
+/* section with photos */
+.photo {
+  list-style: none;
+}
+
+.photo-list {
+}
+
+.photo-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.photo-description {
+  font-size: 16px;
+  line-height: 1.87;
+}
