@@ -105,6 +105,10 @@ body {
   font-size: 14px;
 }
 
+.heading-box {
+  background: #f5f4fa;
+}
+
 .heading {
   font-weight: 700;
   font-size: 36px;
