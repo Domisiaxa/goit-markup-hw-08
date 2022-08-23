@@ -4,6 +4,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+}
+
 /* just the logo */
 .logo-name {
   font-family: "Raleway", sans-serif;
@@ -41,7 +45,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.menu-list {
+.menu-text {
   text-decoration: none;
   color: #212121;
 }
@@ -54,17 +58,17 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contact-list {
+.contact-text {
   text-decoration: none;
   color: #757575;
 }
 
 /* focus */
-.menu-list:hover {
+.menu-text:hover {
   color: #2196f3;
 }
 
-.contact-list:hover {
+.contact-text:hover {
   color: #2196f3;
 }
 
