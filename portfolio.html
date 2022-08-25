@@ -14,66 +14,77 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
   </head>
 
-  <body class="container">
+  <body>
     <header>
-      <nav>
-        <a class="logo-name" href="WebStudio"
-          ><span class="blue-text">Web</span>Studio</a
-        >
-        <!-- Navigating to other pages -->
-        <ul class="menu">
-          <li class="menu-list">
-            <a class="menu-text" href="index.html">Agencja</a>
-          </li>
-          <li class="menu-list">
-            <a class="menu-text" href="portfolio.html"
-              ><span class="blue-text">Portfolio</span></a
+      <div class="header-style container">
+        <nav>
+          <a class="logo-name" href="WebStudio"
+            ><span class="blue-text">Web</span>Studio</a
+          >
+          <!-- Navigating to other pages -->
+          <ul class="menu">
+            <li class="menu-list">
+              <a class="menu-text" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-text" href="portfolio.html"
+                ><span class="blue-text">Portfolio</span></a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menu-text" href="">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contact -->
+        <ul class="contact">
+          <li class="contact-list">
+            <a class="contact-text" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="menu-list">
-            <a class="menu-text" href="">Kontakt</a>
+          <li class="contact-list">
+            <a class="contact-text" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
-      </nav>
-      <!-- Contact -->
-      <ul class="contact">
-        <li class="contact-list">
-          <a class="contact-text" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-list">
-          <a class="contact-text" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
+        <span class="frame"></span>
+      </div>
     </header>
 
     <main>
-      <ul class="button-list">
-        <li>
-          <button class="font-button" type="button">Wszystkie</button>
-        </li>
-        <li>
-          <button class="font-button" type="button">Strony</button>
-        </li>
-        <li><button class="font-button" type="button">Aplikacje</button></li>
-        <li><button class="font-button" type="button">Dizajn</button></li>
-        <li><button class="font-button" type="button">Marketing</button></li>
-      </ul>
+      <div class="buttons-padding section container">
+        <ul class="buttons">
+          <li clas="list-button">
+            <button class="button-type" type="button">Wszystkie</button>
+          </li>
+          <li clas="list-button">
+            <button class="button-type" type="button">Strony</button>
+          </li>
+          <li clas="list-button">
+            <button class="button-type" type="button">Aplikacje</button>
+          </li>
+          <li clas="list-button">
+            <button class="button-type" type="button">Dizajn</button>
+          </li>
+          <li clas="list-button">
+            <button class="button-type" type="button">Marketing</button>
+          </li>
+        </ul>
+      </div>
 
-      <section>
+      <section class="section-work section container">
         <ul class="photo">
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio1.jpg"
                 alt="The photo shows a laptop with an open website"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Technocrack</h4>
@@ -81,13 +92,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio2.jpg"
                 alt="The graphic shows two basketball players from other clubs"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Grafika New Orlean vs Golden Star</h4>
@@ -95,13 +106,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio3.jpg"
                 alt="Graphics showing the logo of a seafood restaurant"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Restauracja Seafood</h4>
@@ -109,13 +120,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio4.jpg"
                 alt="The photo shows over-ear headphones"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Projekt Prime</h4>
@@ -123,13 +134,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio5.jpg"
                 alt="The photo shows the design of the boxes"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Projekt Boxes</h4>
@@ -137,13 +148,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio6.jpg"
                 alt="The photo shows a monitor with an open website"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Inspiration has no Borders</h4>
@@ -151,13 +162,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio7.jpg"
                 alt="The photo shows a book with interesting design elements"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Magazyn Limited Edition</h4>
@@ -165,13 +176,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio8.jpg"
                 alt="The photo shows the LAB project"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Projekt LAB</h4>
@@ -179,13 +190,13 @@
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="list-work">
+            <figure class="border-photo">
               <img
                 src="images/portfolio9.jpg"
                 alt="The photo shows a laptop with an open website"
-                width="370"
-                height="294"
+                width="333"
+                height="264"
               />
               <figcaption>
                 <h4 class="photo-text">Growing Business</h4>
@@ -198,27 +209,31 @@
     </main>
 
     <!-- Page footer -->
-    <footer class="footer-box">
-      <address>
-        <a class="logo-name-footer" href="WebStudio"
-          ><span class="blue-text">Web</span>Studio</a
-        >
-        <ul class="footer">
-          <li>
-            <a class="footer-list" href="*"
-              ><span class="white">m. Warszawa, Aleje Jerozolimskie 21</span></a
-            >
-          </li>
-          <li>
-            <a class="footer-list" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="footer-list" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+    <footer>
+      <div class="footer-box container">
+        <address class="footer-style">
+          <a class="logo-name-footer" href="WebStudio"
+            ><span class="blue-text">Web</span>Studio</a
+          >
+          <ul class="footer">
+            <li>
+              <a class="footer-list" href="*"
+                ><span class="white"
+                  >m. Warszawa, Aleje Jerozolimskie 21</span
+                ></a
+              >
+            </li>
+            <li>
+              <a class="footer-list" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-list" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

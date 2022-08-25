@@ -4,6 +4,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* other */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0px;
+}
 .container {
   width: 1200px;
 }
@@ -25,6 +31,45 @@ body {
   text-decoration: none;
   color: #ffffff;
   line-height: 1.19;
+}
+
+.header-style {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-left: 139px;
+}
+
+.menu,
+.menu-list,
+.contact-list {
+  display: inline-block;
+}
+
+.menu-list {
+  padding-right: 29px;
+}
+
+.menu {
+  padding-left: 60px;
+}
+
+.contact {
+  padding-left: 222px;
+}
+
+.contact-list {
+  padding-right: 32px;
+}
+
+/* rame header */
+.frame {
+  width: 1200px;
+  position: absolute;
+  height: 0px;
+  left: 0px;
+  top: 93px;
+  border: 1px solid #ececec;
 }
 
 /* color elements */
@@ -82,16 +127,32 @@ body {
 
 /* main inscription */
 .main-description {
-  font-weight: 900;
-  font-size: 44px;
   color: #ffffff;
-  text-align: center;
   line-height: 1.36;
+  align-items: center;
+  text-align: center;
+  width: 1200px;
+  height: 600px;
   background: #2f303a;
+  padding-top: 200px;
+}
+
+.introduction {
+  font-family: "Roboto";
+  font-weight: 900;
   letter-spacing: 0.06em;
+  text-align: center;
+  width: 1200px;
+  top: 280px;
+  font-size: 44px;
+  line-height: 60px;
+  margin: 0px;
+  padding-bottom: 30px;
 }
 
 .order-button {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
@@ -99,45 +160,119 @@ body {
   line-height: 1.87;
   background-color: #2196f3;
   letter-spacing: 0.06em;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  top: 350px;
+  width: 200px;
+  left: 500px;
+  height: 50px;
 }
 
-.section {
+.section-description {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
 .section-list {
+  padding-left: 28px;
+}
+
+.section-note {
   font-weight: 700;
   font-size: 14px;
 }
 
 .section-text {
   font-size: 14px;
+  color: #757575;
+  letter-spacing: 0.03em;
 }
 
 .heading-box {
   background: #f5f4fa;
+  width: 1200px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
 }
 
 .heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+  margin: 0px;
 }
 
 .picture {
   list-style: none;
+  margin: 0px;
 }
 
 .picture-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 .picture-job {
   font-size: 16px;
   line-height: 1.18;
   color: #757575;
+  text-align: center;
+}
+
+.what-we-do {
+  padding-top: 0px;
+}
+
+.list-picture {
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 48px;
+}
+
+.heading-box {
+  max-width: 1200px;
+  padding: 5px;
+}
+
+.heading2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.picture2 {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  gap: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.list-picture2 {
+  width: 243px;
+  background: #ffffff;
+  flex-basis: calc(100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.border-picture {
+  width: 243px;
+  margin: 0px;
 }
 
 /* footer */
@@ -145,6 +280,9 @@ body {
   font-size: 14px;
   list-style: none;
   line-height: 1.71;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 20px;
 }
 
 .footer-list {
@@ -152,12 +290,34 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* only portfolio */
-.button-list {
-  list-style: none;
+.footer-style {
+  padding-top: 60px;
+  padding-left: 139px;
 }
 
-.font-button {
+.footer-box {
+  position: absolute;
+  width: 1200px;
+  height: 252px;
+  left: 0px;
+  background: #2f303a;
+}
+
+.footer li {
+  padding-bottom: 8px;
+}
+
+/*style button box*/
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.button-type {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -165,13 +325,23 @@ body {
   cursor: pointer;
   background: #f5f4fa;
   text-align: center;
+  width: 93px;
+  height: 38px;
+  left: 639px;
+  top: 174px;
+  border-radius: 4px;
+  border-color: transparent;
+  margin-right: 8px;
 }
 
-.font-button:hover {
+.button-type:hover {
   color: white;
   background: #2196f3;
 }
 
+.buttons-padding {
+  padding-bottom: 0px;
+}
 /* section with photos */
 .photo {
   list-style: none;
@@ -190,6 +360,57 @@ body {
   color: #757575;
 }
 
-.footer-box {
-  background: #2f303a;
+/* photos portfolio */
+.section-work {
+  max-width: 1200px;
+  padding-left: 70px;
+  padding-top: 0px;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 50px;
+}
+
+.list-work {
+  flex-basis: calc(100% / 4);
+  border: 1px solid #eeeeee;
+}
+
+.border-photo {
+  width: 333px;
+  margin: 0px;
+}
+
+.photo-text,
+.photo-description {
+  margin: 0px;
+}
+
+.photo-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: start;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.photo-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: start;
+  padding-left: 15px;
+  padding-bottom: 20px;
 }
