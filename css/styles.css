@@ -12,6 +12,8 @@ body {
 }
 .container {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* just the logo */
@@ -37,7 +39,6 @@ body {
   display: flex;
   margin-top: 24px;
   margin-bottom: 25px;
-  margin-left: 139px;
 }
 
 .menu,
@@ -47,24 +48,24 @@ body {
 }
 
 .menu-list {
-  padding-right: 29px;
+  padding-right: 46px;
 }
 
 .menu {
-  padding-left: 60px;
+  padding-left: 93px;
 }
 
 .contact {
-  padding-left: 222px;
+  padding-left: 275px;
 }
 
 .contact-list {
-  padding-right: 32px;
+  padding-left: 50px;
 }
 
 /* rame header */
 .frame {
-  width: 1200px;
+  width: 100%;
   position: absolute;
   height: 0px;
   left: 0px;
@@ -131,7 +132,7 @@ body {
   line-height: 1.36;
   align-items: center;
   text-align: center;
-  width: 1200px;
+  width: 100%;
   height: 600px;
   background: #2f303a;
   padding-top: 200px;
@@ -175,10 +176,7 @@ body {
   margin: 0px;
   padding: 0px;
   list-style: none;
-}
-
-.section-list {
-  padding-left: 28px;
+  justify-content: space-between;
 }
 
 .section-note {
@@ -210,8 +208,13 @@ body {
 
 .picture {
   list-style: none;
-  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   margin: 0px;
+  padding: 0px;
+  padding-top: 50px;
+  justify-content: space-between;
 }
 
 .picture-name {
@@ -234,13 +237,13 @@ body {
 
 .list-picture {
   display: inline-block;
-  padding-top: 50px;
-  padding-left: 48px;
+  text-align: justify;
+  flex-basis: calc(100% / 4);
 }
 
 .heading-box {
-  max-width: 1200px;
-  padding: 5px;
+  width: 100%;
+  height: 648px;
 }
 
 .heading2 {
@@ -249,30 +252,29 @@ body {
   line-height: 1.16;
   text-align: center;
   margin: 0px;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
 .picture2 {
   display: flex;
-  gap: 10px;
   list-style: none;
-  gap: 45px;
-  padding-left: 45px;
-  padding-right: 45px;
+  gap: 30px;
+  padding: 0px;
+  margin: 0px;
+  justify-content: space-between;
 }
 
 .list-picture2 {
-  width: 243px;
+  width: 270px;
+  height: 368px;
   background: #ffffff;
-  flex-basis: calc(100%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .border-picture {
-  width: 243px;
+  width: 270px;
   margin: 0px;
 }
 
@@ -293,19 +295,18 @@ body {
 
 .footer-style {
   padding-top: 60px;
-  padding-left: 139px;
 }
 
 .footer-box {
   position: absolute;
-  width: 1200px;
+  width: 100%;
   height: 252px;
   left: 0px;
   background: #2f303a;
 }
 
 .footer li {
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 }
 
 /*style button box*/
