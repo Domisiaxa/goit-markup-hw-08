@@ -56,7 +56,7 @@ body {
 }
 
 .contact {
-  padding-left: 275px;
+  padding-left: 219px;
 }
 
 .contact-list {
@@ -439,13 +439,12 @@ body {
 
 /* icon */
 .icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  color: #afb1b8;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contact-list:hover svg {
+  fill: #2196f3;
 }
 
 /* icon social */
@@ -527,4 +526,67 @@ body {
   background-color: #2196f3;
 }
 
-/* contact icon */
+/* lorem icon */
+.icon-lorem {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-box {
+  width: 270px;
+  min-height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* logo list */
+.custumers {
+  height: 372px;
+}
+
+.title-client {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+
+.client {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 15px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.logo {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.clients-list:hover svg,
+.clients-list:focus svg {
+  fill: #2196f3;
+}
+
+.clients-list:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
