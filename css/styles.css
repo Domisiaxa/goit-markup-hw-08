@@ -448,3 +448,83 @@ body {
   fill: currentColor;
   color: #afb1b8;
 }
+
+/* icon social */
+.social {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.social-list {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list:hover svg,
+.social-list:focus svg {
+  fill: #ffffff;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
+}
+
+/*icon footer */
+.footer-nav {
+  float: left;
+  padding-right: 70px;
+}
+
+.come-list {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.come-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.come-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.come {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-top: 72px;
+  margin-bottom: 20px;
+}
+.come-link:hover {
+  background-color: #2196f3;
+}
+
+/* contact icon */
