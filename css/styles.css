@@ -10,6 +10,7 @@ body {
   padding-bottom: 94px;
   margin: 0px;
 }
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -147,6 +148,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .container-main {
   width: 1600px;
   margin-left: auto;
@@ -207,9 +209,8 @@ body {
 
 .heading-box {
   background: #f5f4fa;
-  width: 1200px;
+  width: 100%;
   height: 708px;
-  top: 1449px;
 }
 
 .heading {
@@ -258,11 +259,6 @@ body {
   display: inline-block;
   text-align: justify;
   flex-basis: calc(100% / 4);
-}
-
-.heading-box {
-  width: 100%;
-  height: 648px;
 }
 
 .heading2 {
@@ -367,6 +363,7 @@ body {
 .buttons-padding {
   padding-bottom: 0px;
 }
+
 /* section with photos */
 .photo {
   list-style: none;
