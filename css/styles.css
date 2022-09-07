@@ -63,7 +63,7 @@ body {
 }
 
 .contact-list {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 /* rame header */
@@ -117,7 +117,8 @@ body {
   color: #2196f3;
 }
 
-.contact-text:hover {
+.contact-text:hover,
+.contact-text:hover svg {
   color: #2196f3;
 }
 
