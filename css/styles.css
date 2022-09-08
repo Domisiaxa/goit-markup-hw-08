@@ -72,7 +72,7 @@ body {
   position: absolute;
   height: 0px;
   left: 0px;
-  top: 80px;
+  top: 81px;
   border: 1px solid #ececec;
 }
 
@@ -262,6 +262,7 @@ body {
   display: inline-block;
   text-align: justify;
   flex-basis: calc(100% / 4);
+  position: relative;
 }
 
 .heading2 {
@@ -404,7 +405,6 @@ body {
 }
 
 .list-work {
-  flex-basis: calc(100% / 4);
   border: 1px solid #eeeeee;
   display: inline-block;
   text-align: justify;
@@ -598,4 +598,112 @@ body {
 .clients-list:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
+}
+
+/* agencja */
+.transparency-color {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: #2f303acc;
+}
+
+.list-picture .transparency-color {
+  position: absolute;
+  bottom: 2px;
+  margin: 0;
+}
+
+.active-page::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  top: 23px;
+  margin: auto;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border: 1em solid #fff;
+  background: #111;
+  max-width: 100%;
+}
+
+.title img {
+  display: block;
+  transition: all 0.6s ease-in-out;
+  width: 20em;
+}
+
+.title:before,
+.title:after {
+  content: "";
+  position: absolute;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+}
+
+/* portfolio transition*/
+.list-work {
+  position: relative;
+  overflow: hidden;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hidden-text {
+  position: absolute;
+  width: 301px;
+  height: 196px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2196f3e5;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: start;
+}
+
+.hidden:hover .hidden-text {
+  transform: translateX(0);
+}
+.hidden {
+  position: relative;
+  overflow: hidden;
+  width: 370px;
+  height: 294px;
+}
+
+.hidden-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 45px;
+  padding-left: 24px;
+  margin: 0;
 }
