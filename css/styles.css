@@ -115,12 +115,14 @@ body {
 }
 
 /* focus */
-.menu-text:hover {
+
+.menu .menu-text:hover,
+.menu .menu-text:focus {
   color: #2196f3;
 }
 
-.contact-text:hover,
-.contact-text:hover svg {
+.contact .contact-text:hover,
+.contact .contatct-text:focus {
   color: #2196f3;
 }
 
