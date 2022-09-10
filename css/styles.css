@@ -122,11 +122,12 @@ body {
 }
 
 .contact .contact-text:hover,
-.contact .contatct-text:focus {
+.contact .contact-text:focus {
   color: #2196f3;
 }
 
-.footer-list:hover {
+.footer .footer-list:hover,
+.footer .footer-list:focus {
   color: #2196f3;
 }
 
