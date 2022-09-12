@@ -468,14 +468,28 @@ body {
 }
 
 /* icon social */
+.footer-icon {
+  padding-right: 78px;
+}
+
 .social {
   list-style: none;
-  padding-left: 30px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.social-footer {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: stretch;
 }
 
 .social-list {
   display: inline-block;
-  margin-right: 10px;
 }
 
 .social-link {
@@ -510,6 +524,11 @@ body {
   padding-right: 70px;
 }
 
+.footer-icon {
+  position: relative;
+  float: left;
+}
+
 .come-list {
   display: inline-block;
   margin-right: 10px;
@@ -540,8 +559,10 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 0px;
   padding-top: 72px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .come-link:hover {
@@ -781,4 +802,70 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* newsletter */
+.icon-newsletter {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  margin-right: 28px;
+}
+
+.sing-up {
+  position: absolute;
+  color: #ffffff;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-newsletter {
+  padding-top: 72px;
+  float: left;
+}
+
+.box-newsletter {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  border-color: #ffffff4d;
+  background-color: #2196f300;
+  color: #2196f300;
+  padding-left: 16px;
+  margin-right: 12px;
+  margin-top: 20px;
+}
+
+.button-newsletter {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 42px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.style-newsletter {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
 }
