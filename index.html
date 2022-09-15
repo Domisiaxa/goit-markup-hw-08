@@ -472,9 +472,9 @@
           <form class="style-newsletter">
             <label>
               <input
-                class="box-newsletter"
-                type="text"
-                name="username"
+                class="box-newsletter text-visible"
+                type="email"
+                name="email"
                 placeholder="E-mail"
               />
             </label>
@@ -495,8 +495,65 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <div class="box-data">
+          <form>
+            <p class="heading-data">Zostaw swoje dane w formularzu poniżej</p>
+            <label class="text-data"
+              >Imie
+              <input
+                class="input-date"
+                id="fullname"
+                name="fullname"
+                type="text"
+              />
+              <svg class="icon-data" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="text-data"
+              >Telefon
+              <input class="input-date" name="phone" type="tel" />
+              <svg class="icon-data" width="13" height="13">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </label>
+            <label class="text-data"
+              >Email
+              <input class="input-date" name="useremail" type="email" />
+              <svg class="icon-data" width="15" height="12">
+                <use href="./images/icons.svg#icon-note"></use>
+              </svg>
+            </label>
+            <label class="text-data"
+              >Komentarz
+              <textarea
+                class="comment-data text-visible"
+                name="comment"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <label class="label-check">
+              <input type="checkbox" class="sdb" />
+              <svg class="checkmark-icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-checkmark"></use>
+              </svg>
+
+              <span class="accept-icon"></span>
+              <span class="accept-data">
+                Oświadczam iż akceptuję
+                <a href="" class="link-data">Regulamin</a> i
+                <a href="" class="link-data">Politykę Prywatności.</a>
+              </span>
+              <div class="button-send">
+                <button type="submit" class="button-data">Wyślij</button>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
