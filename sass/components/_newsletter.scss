@@ -1,0 +1,62 @@
+.section-newsletter {
+  padding-top: 72px;
+  float: left;
+  &__sing-up {
+    position: absolute;
+    color: $MainColorSecond;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__style {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    background: $BrandColorFirst;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 42px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $MainColorSecond;
+  }
+  &__icon {
+    fill: $MainColorSecond;
+    width: 24px;
+    height: 24px;
+    margin-right: 28px;
+  }
+  &__box {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    border-color: #ffffff4d;
+    background-color: #2196f300;
+    color: #2196f300;
+    padding-left: 16px;
+    margin-right: 12px;
+    margin-top: 20px;
+  }
+  &--text-visible::placeholder {
+    color: #75757580;
+  }
+}

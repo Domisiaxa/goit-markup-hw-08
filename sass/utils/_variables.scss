@@ -1,0 +1,30 @@
+$MainColorFirst: #212121;
+$MainColorSecond: #ffffff;
+$MainColorThird: #000000;
+$BrandColorFirst: #2196f3;
+$BrandColorSecond: #2f303a;
+$BrandColorThird: #757575;
+$BrandColorFourth: #f5f4fa;
+$BrandColorFifth: rgba(255, 255, 255, 0.6);
+$BrandColorSixth: #afb1b8;
+$BrandColorSeventh: rgba(255, 255, 255, 0.1);
+$BrandColorEighth: #ececec;
+$BrandColorNinth: rgba(0, 0, 0, 0.2);
+$BrandColorTenth: #eeeeee;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

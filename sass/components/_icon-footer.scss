@@ -1,0 +1,47 @@
+.icon-footer {
+  position: relative;
+  float: left;
+  padding-right: 78px;
+  &__heading {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $MainColorSecond;
+    margin-top: 0px;
+    padding-top: 72px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__social {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: stretch;
+  }
+  &__list {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  &__come-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__come-link:hover {
+    background-color: $BrandColorFirst;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__come-icon {
+    width: 20px;
+    height: 20px;
+    fill: $MainColorSecond;
+  }
+}

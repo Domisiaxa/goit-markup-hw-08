@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -16,6 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+
+    <link href="./css/main.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -23,36 +24,36 @@
       <div class="header__display container">
         <nav>
           <a class="header__logo" href="WebStudio"
-            ><span class="header--color-logo">Web</span>Studio</a
+            ><span class="header__logo--color">Web</span>Studio</a
           >
           <!-- Navigating to other pages -->
-          <ul class="menu">
-            <li class="menu__list">
-              <a class="menu__text" href="index.html">Agencja</a>
+          <ul class="header__menu">
+            <li class="header__menu__list">
+              <a class="header__menu__text" href="index.html">Agencja</a>
             </li>
-            <li class="menu__list menu--active-page">
-              <a class="menu__text" href="portfolio.html"
-                ><span class="backlight">Portfolio</span></a
+            <li class="header__menu__list header__menu--active-page">
+              <a class="header__menu__text" href="portfolio.html"
+                ><span class="header__menu--backlight">Portfolio</span></a
               >
             </li>
-            <li class="menu__list">
-              <a class="menu__text" href="">Kontakt</a>
+            <li class="header__menu__list">
+              <a class="header__menu__text" href="">Kontakt</a>
             </li>
           </ul>
         </nav>
         <!-- Contact -->
-        <ul class="contact">
-          <li class="contact__list">
-            <a class="contact__text" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
+        <ul class="header__contact">
+          <li class="header__contact__list">
+            <a class="header__contact__text" href="mailto:info@devstudio.com">
+              <svg class="header__contact__icon" width="16" height="12">
                 <use href="images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact__list">
-            <a class="contact__text" href="tel:+48111111111">
-              <svg class="contact__icon" width="10" height="16">
+          <li class="header__contact__list">
+            <a class="header__contact__text" href="tel:+48111111111">
+              <svg class="header__contact__icon" width="10" height="16">
                 <use href="images/icons.svg#icon-telephone"></use>
               </svg>
               +48 111 111 111</a
@@ -65,20 +66,20 @@
     <main>
       <div class="buttons section container">
         <ul class="buttons__hand">
-          <li class="button__list">
-            <button class="button__type" type="button">Wszystkie</button>
+          <li class="buttons__list">
+            <button class="buttons__type" type="button">Wszystkie</button>
           </li>
-          <li class="button__list">
-            <button class="button__type" type="button">Strony</button>
+          <li class="buttons__list">
+            <button class="buttons__type" type="button">Strony</button>
           </li>
-          <li class="button__list">
-            <button class="button__type" type="button">Aplikacje</button>
+          <li class="buttons__list">
+            <button class="buttons__type" type="button">Aplikacje</button>
           </li>
-          <li class="button__list">
-            <button class="button__type" type="button">Dizajn</button>
+          <li class="buttons__list">
+            <button class="buttons__type" type="button">Dizajn</button>
           </li>
-          <li class="button__list">
-            <button class="button__type" type="button">Marketing</button>
+          <li class="buttons__list">
+            <button class="buttons__type" type="button">Marketing</button>
           </li>
         </ul>
       </div>

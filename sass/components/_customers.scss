@@ -1,0 +1,41 @@
+.customers {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-left: 15px;
+  }
+  &__client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $BrandColorSixth;
+    border-radius: 4px;
+    fill: $BrandColorSixth;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__client:hover svg,
+  .customers__client:focus svg {
+    fill: $BrandColorFirst;
+  }
+  &__client:hover {
+    border: 1px solid $BrandColorFirst;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__container {
+    width: 106px;
+    height: 60px;
+    fill: $BrandColorSixth;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

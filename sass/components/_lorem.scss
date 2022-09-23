@@ -1,0 +1,25 @@
+.lorem {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  justify-content: space-between;
+  &__icon-box {
+    width: 270px;
+    min-height: 120px;
+    background-color: $BrandColorFourth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__introducing {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  &__text {
+    font-size: 14px;
+    color: $BrandColorThird;
+    letter-spacing: 0.03em;
+  }
+}
