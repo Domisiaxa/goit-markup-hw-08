@@ -307,6 +307,19 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .work {
+    width: 1200px;
+  }
+  .work__main-position {
+    width: 1200px;
+  }
+}
 .team {
   background: #f5f4fa;
   width: 100%;
@@ -406,6 +419,7 @@ body {
   padding-left: 15px;
 }
 .customers__client {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
