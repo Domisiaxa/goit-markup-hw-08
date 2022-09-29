@@ -1,16 +1,20 @@
 .header {
   border-bottom: 1px solid $BrandColorEighth;
-  width: 100%;
+  position: relative;
   &__display {
-    margin-top: 24px;
-    margin-bottom: 25px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 15px;
+    min-width: 320px;
+    max-width: 1200px;
   }
   &__logo {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     text-decoration: none;
     color: $MainColorThird;
     line-height: 1.19;
@@ -18,23 +22,39 @@
       color: $BrandColorFirst;
     }
   }
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
   &__menu {
+    float: left;
+    width: 432px;
+    padding: 0px;
     font-weight: 500;
     font-size: 14px;
     list-style: none;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-left: 93px;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-bottom: 0px;
+
     &__list {
-      padding-right: 46px;
+      padding-right: 60px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      float: left;
     }
     &--active-page::after {
       content: "";
       display: block;
       position: relative;
-      width: 100%;
+      width: 0%;
       height: 4px;
       background: $BrandColorFirst;
       border-radius: 2px;
@@ -55,21 +75,28 @@
     }
   }
   &__contact {
+    float: left;
+    margin-top: 0px;
     font-weight: 500;
     font-size: 14px;
     list-style: none;
     line-height: 1.14;
+    padding-left: 0px;
     letter-spacing: 0.02em;
-    padding-left: 219px;
-    margin-top: 8px;
     margin-bottom: 0px;
+    margin-left: 0px;
+    float: right;
     &__list {
-      margin-left: 50px;
+      color: $BrandColorThird;
     }
     &__list:hover svg {
       fill: $BrandColorFirst;
     }
     &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
       text-decoration: none;
       color: $BrandColorThird;
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,5 +115,61 @@
   &__menu__list,
   &__contact__list {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding: 21px 15px;
+    column-gap: 83px;
+  }
+
+  .header__flex {
+    display: none;
+  }
+
+  .header__list {
+    flex-wrap: nowrap;
+    column-gap: 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header__flex {
+    display: inline-block;
+  }
+  .header__menu {
+    padding-left: 83px;
+  }
+  .header__contact {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+  }
+  .header-display {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+  .header__menu,
+  .header__contact {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .header__contact {
+    padding-top: 13px;
+  }
+  .header__contact__text {
+    padding-left: 30px;
   }
 }

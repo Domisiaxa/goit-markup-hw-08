@@ -1,0 +1,31 @@
+.mobile__button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 480px) {
+  .mobile__button {
+    font-size: 26px;
+  }
+  .header__contact__icon {
+    width: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__button {
+    display: none;
+  }
+}

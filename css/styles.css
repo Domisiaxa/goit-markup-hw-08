@@ -142,7 +142,7 @@ body {
     ),
     url("../images/background-main.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px;
+  max-width: 1600px;
   background-position: center;
   display: flex;
   flex-direction: column;
