@@ -172,4 +172,16 @@
   .header__contact__text {
     padding-left: 30px;
   }
+
+  .header__menu--backlight::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 4px;
+    background: $BrandColorFirst;
+    border-radius: 2px;
+    top: 26px;
+    margin: auto;
+    width: 100%;
+  }
 }
