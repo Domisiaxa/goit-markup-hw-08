@@ -1,12 +1,15 @@
 .lorem {
+  min-width: 320px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   list-style: none;
+  padding: 0px;
   &__icon-box {
-    width: 450px;
+    min-width: 320px;
+    max-width: 450px;
     height: 120px;
     background-color: $BrandColorFourth;
     display: flex;
@@ -20,7 +23,8 @@
     font-size: 14px;
   }
   &__text {
-    width: 450px;
+    min-width: 320px;
+    max-width: 450px;
     font-size: 14px;
     color: $BrandColorThird;
     letter-spacing: 0.03em;

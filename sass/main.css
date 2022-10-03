@@ -262,15 +262,18 @@ body {
   }
 }
 .lorem {
+  min-width: 320px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   list-style: none;
+  padding: 0px;
 }
 .lorem__icon-box {
-  width: 450px;
+  min-width: 320px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -284,7 +287,8 @@ body {
   font-size: 14px;
 }
 .lorem__text {
-  width: 450px;
+  min-width: 320px;
+  max-width: 450px;
   font-size: 14px;
   color: #757575;
   letter-spacing: 0.03em;
