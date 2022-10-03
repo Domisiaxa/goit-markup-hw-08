@@ -262,7 +262,7 @@ body {
   }
 }
 .lorem {
-  min-width: 320px;
+  min-width: 270px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -272,7 +272,7 @@ body {
   padding: 0px;
 }
 .lorem__icon-box {
-  min-width: 320px;
+  min-width: 270px;
   max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
@@ -287,7 +287,7 @@ body {
   font-size: 14px;
 }
 .lorem__text {
-  min-width: 320px;
+  min-width: 270px;
   max-width: 450px;
   font-size: 14px;
   color: #757575;
