@@ -154,8 +154,6 @@ body {
   .header__contact {
     display: flex;
     flex-direction: column;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
@@ -384,8 +382,7 @@ body {
 }
 .team {
   background: #f5f4fa;
-  width: 100%;
-  height: 708px;
+  height: auto;
 }
 .team__heading {
   font-weight: 700;
@@ -396,23 +393,36 @@ body {
   padding-bottom: 50px;
 }
 .team__list {
+  justify-content: center;
+  flex-flow: row wrap;
   display: flex;
+  flex-basis: 33.3333333333%;
   list-style: none;
   gap: 30px;
   padding: 0px;
-  margin: 0px;
-  justify-content: space-between;
+  margin: 0;
+  flex-wrap: wrap;
 }
 .team__box-picture {
-  width: 270px;
-  height: 428px;
+  margin: auto;
+  min-width: 270px;
+  max-width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin: 0px;
 }
 .team__arrangement {
-  width: 270px;
+  min-width: 270px;
+  max-width: 450px;
   margin: 0px;
+}
+.team__image {
+  min-width: 270px;
+  max-width: 100%;
+  max-height: 460px;
+  display: block;
+  height: auto;
 }
 .team__picture-name {
   font-weight: 500;
@@ -435,9 +445,11 @@ body {
   list-style: none;
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 32px;
   margin-right: 32px;
+  gap: 10px;
+  padding-bottom: 24px;
 }
 .team__social-list {
   display: inline-block;
@@ -465,6 +477,24 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .team__image {
+    width: 354px;
+    height: 350px;
+  }
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .team__image {
+    width: 270px;
+    height: 260px;
+  }
+}
 .customers {
   margin: 0px;
   font-weight: 700;
@@ -477,15 +507,16 @@ body {
 .customers__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  padding-left: 15px;
+  padding: 0px;
 }
 .customers__client {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -514,6 +545,7 @@ body {
   height: 252px;
   left: 0px;
   background: #2f303a;
+  top: 5000px;
 }
 .footer__nav {
   float: left;
@@ -889,15 +921,18 @@ body {
 }
 
 .buttons {
+  padding-left: 15px;
   padding-bottom: 0px;
 }
 .buttons__hand {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding: 10px;
   list-style: none;
   padding: 0px;
   margin: 0px;
+  gap: 8px;
 }
 .buttons__type {
   font-family: "Roboto", sans-serif;
@@ -922,21 +957,34 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media (min-width: 480px) {
+  .buttons__hand {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons__hand {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
 .app {
   max-width: 1200px;
   padding-top: 0px;
 }
 .app__arrangement {
-  list-style: none;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
   gap: 30px;
   text-align: center;
   list-style: none;
-  margin: 0px;
+  margin: 0;
   padding: 0px;
   padding-top: 50px;
-  justify-content: space-between;
 }
 .app__list {
   border: 1px solid #eeeeee;
@@ -948,14 +996,19 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .app__border {
-  width: 370px;
+  width: 100%;
+  max-width: 320px;
   margin: 0px;
 }
 .app__hidden {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 294px;
+  width: 320px;
+  max-height: 294px;
+}
+.app__img {
+  width: 320px;
+  max-height: 294px;
 }
 .app__hidden:hover .app__text-hide {
   transform: translateX(0);
@@ -1010,6 +1063,23 @@ body {
   margin: 0px;
 }
 
+@media (min-width: 480px) {
+  .app__img {
+    max-width: 450px;
+    max-height: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .app__img {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .app__arrangement {
+    margin: 0px;
+  }
+}
 .mobile__button {
   border: none;
   width: 40px;

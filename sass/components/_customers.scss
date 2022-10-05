@@ -9,15 +9,16 @@
   &__list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    padding-left: 15px;
+    padding: 0px;
   }
   &__client {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    max-width: 210px;
     height: 92px;
     border: 1px solid $BrandColorSixth;
     border-radius: 4px;

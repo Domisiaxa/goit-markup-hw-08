@@ -2,16 +2,18 @@
   max-width: 1200px;
   padding-top: 0px;
   &__arrangement {
-    list-style: none;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
     gap: 30px;
     text-align: center;
     list-style: none;
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     padding-top: 50px;
-    justify-content: space-between;
   }
   &__list {
     border: 1px solid $BrandColorTenth;
@@ -25,14 +27,19 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__border {
-    width: 370px;
+    width: 100%;
+    max-width: 320px;
     margin: 0px;
   }
   &__hidden {
     position: relative;
     overflow: hidden;
-    width: 370px;
-    height: 294px;
+    width: 320px;
+    max-height: 294px;
+  }
+  &__img {
+    width: 320px;
+    max-height: 294px;
   }
   &__hidden:hover &__text-hide {
     transform: translateX(0);
@@ -85,5 +92,27 @@
     line-height: 1.87;
     color: $BrandColorThird;
     margin: 0px;
+  }
+}
+
+@media (min-width: 480px) {
+  .app__img {
+    max-width: 450px;
+    max-height: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app__img {
+    width: 354px;
+    height: 294px;
+    .app__arrangement {
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .app__arrangement {
+      margin: 0px;
+    }
   }
 }
