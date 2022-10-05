@@ -1,14 +1,12 @@
 .footer {
+  min-width: 320px;
+  text-align: center;
   position: absolute;
   width: 100%;
-  height: 252px;
+  padding-bottom: 90px;
   left: 0px;
   background: $BrandColorSecond;
-
-  top: 5000px;
   &__nav {
-    float: left;
-    padding-right: 70px;
   }
   &__style {
     padding-top: 60px;
@@ -26,6 +24,7 @@
     color: $BrandColorFirst;
   }
   &__list {
+    justify-content: center;
     font-size: 14px;
     list-style: none;
     line-height: 1.71;
@@ -49,5 +48,24 @@
   }
   &--color-city {
     color: $MainColorSecond;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__style {
+    padding-left: 76px;
+  }
+  .footer__nav {
+    float: left;
+    padding-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__style {
+    padding-left: 0;
+  }
+  .footer {
+    align-items: flex-start;
+    text-align: start;
   }
 }

@@ -1,7 +1,4 @@
 .icon-footer {
-  position: relative;
-  float: left;
-  padding-right: 78px;
   &__heading {
     font-family: "Roboto";
     font-style: normal;
@@ -11,7 +8,7 @@
     letter-spacing: 0.03em;
     color: $MainColorSecond;
     margin-top: 0px;
-    padding-top: 72px;
+    padding-top: 52px;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -19,7 +16,7 @@
     list-style: none;
     padding: 0px;
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
   }
   &__list {
     display: inline-block;
@@ -43,5 +40,24 @@
     width: 20px;
     height: 20px;
     fill: $MainColorSecond;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon__footer {
+    position: relative;
+    float: left;
+    padding-right: 78px;
+  }
+  .icon-footer__heading {
+    padding-top: 72px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-footer__social {
+    justify-content: stretch;
+  }
+
+  .icon-footer {
+    float: left;
   }
 }

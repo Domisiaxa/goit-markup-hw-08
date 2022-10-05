@@ -1,10 +1,7 @@
 .section-newsletter {
-  padding-top: 72px;
-  float: left;
+  padding-top: 32px;
   &__sing-up {
-    position: absolute;
     color: $MainColorSecond;
-    margin: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -14,10 +11,13 @@
   }
   &__style {
     display: flex;
-    flex-direction: row;
-    padding-top: 16px;
+    flex-direction: column;
+    padding-top: 2px;
+    justify-content: center;
   }
   &__button {
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
     background: $BrandColorFirst;
@@ -44,7 +44,8 @@
     margin-right: 28px;
   }
   &__box {
-    width: 358px;
+    max-width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -53,10 +54,34 @@
     background-color: #2196f300;
     color: #2196f300;
     padding-left: 16px;
-    margin-right: 12px;
     margin-top: 20px;
   }
   &--text-visible::placeholder {
     color: #75757580;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-newsletter {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-newsletter {
+    padding-left: 78px;
+    padding-top: 32px;
+    float: left;
+  }
+  .section-newsletter__box {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .section-newsletter__style {
+    flex-direction: row;
+    margin-right: 12px;
+  }
+  .section-newsletter__sing-up {
+    margin: 0;
   }
 }
