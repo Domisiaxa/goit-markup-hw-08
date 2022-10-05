@@ -383,6 +383,7 @@ body {
 .team {
   background: #f5f4fa;
   height: auto;
+  min-width: 320px;
 }
 .team__heading {
   font-weight: 700;
