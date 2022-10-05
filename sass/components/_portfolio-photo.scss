@@ -78,7 +78,7 @@
     margin: 0px;
     line-height: 36px;
     text-align: start;
-    padding-left: 24px;
+    padding-left: 1px;
     padding-top: 20px;
     color: $MainColorFirst;
   }
@@ -106,8 +106,6 @@
   .app__img {
     width: 354px;
     height: 294px;
-    .app__arrangement {
-    }
   }
 
   @media screen and (min-width: 1200px) {
