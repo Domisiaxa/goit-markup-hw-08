@@ -28,18 +28,18 @@
   }
   &__border {
     width: 100%;
-    max-width: 320px;
+    min-width: 320px;
+
     margin: 0px;
   }
   &__hidden {
     position: relative;
     overflow: hidden;
-    width: 320px;
-    max-height: 294px;
   }
   &__img {
-    width: 320px;
-    max-height: 294px;
+    object-fit: cover;
+    min-width: 320px;
+    width: 100%;
   }
   &__hidden:hover &__text-hide {
     transform: translateX(0);
@@ -81,6 +81,7 @@
     padding-left: 1px;
     padding-top: 20px;
     color: $MainColorFirst;
+    padding-left: 24px;
   }
   &__photo-description {
     font-weight: 400;
@@ -97,18 +98,26 @@
 
 @media (min-width: 480px) {
   .app__img {
-    max-width: 450px;
-    max-height: 294px;
+    object-fit: cover;
+    width: 440px;
+    height: 294px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .app__arrangement {
+    justify-content: flex-start;
+  }
   .app__img {
     width: 354px;
     height: 294px;
   }
 
   @media screen and (min-width: 1200px) {
+    .app__img {
+      width: 370px;
+      height: 294px;
+    }
     .app__arrangement {
       margin: 0px;
     }

@@ -13,14 +13,14 @@
   right: 15px;
   outline: none;
   background-color: rgba(0, 0, 0, 0);
+  &__icon {
+    fill: $MainColorFirst;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .mobile__button {
     font-size: 26px;
-  }
-  .header__contact__icon {
-    width: 0px;
   }
 }
 

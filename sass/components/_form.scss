@@ -88,9 +88,9 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__checkbox:checked ~ &__checkmark-icon {
-    background-color: $MainColorSecond;
-    border: 1px solid $MainColorFirst;
+    background-color: $BrandColorFirst;
     border-radius: 2px;
+    border-color: transparent;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__checkmark-icon {
@@ -98,12 +98,11 @@
     width: 16px;
     height: 15px;
     margin-right: 8px;
-    background-color: $BrandColorFirst;
+    background-color: $MainColorSecond;
+    border-radius: 2px;
     padding-left: 1px;
     padding-top: 1px;
     border: 1px solid $MainColorFirst;
-    border-radius: 2px;
-    border-color: transparent;
   }
   &__check-icon {
     position: absolute;
