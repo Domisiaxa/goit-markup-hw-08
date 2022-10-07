@@ -1317,9 +1317,8 @@ body {
 .menu-container .menu-toggle {
   position: absolute;
   top: 25px;
-  right: 25px;
-  color: #fff;
-  padding-top: 1px;
+  right: 16px;
+  color: #ffffff;
 }
 
 .menu-container {
