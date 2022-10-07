@@ -1268,6 +1268,7 @@ body {
   padding: 0px;
   min-width: 320px;
   margin-top: 64px;
+  row-gap: 8px;
 }
 .mobile__list-socials {
   list-style: none;
