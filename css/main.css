@@ -1213,9 +1213,8 @@ body {
 .mobile__menu-page {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
-  margin-bottom: 300px;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0px;
 }
 .mobile__list-page {
@@ -1323,6 +1322,9 @@ body {
 }
 
 .menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
